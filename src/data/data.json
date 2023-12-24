@@ -1,0 +1,224 @@
+[
+    {
+      "id": 1,
+      "imageURL": "https://static.zara.net/photos///2023/I/0/2/p/7545/517/250/2/w/478/7545517250_2_4_1.jpg?ts=1690538951971",
+      "title": "EASE CARE TEXTURED SHIRT",
+      "description": "Shirt made of fabric with easy care and everyday maintenance texture. ",
+      "price": 390.1,
+      "discount": 10,
+      "gender": "man",
+      "size": ["S", "M", "L"],
+      "quantity": 3
+    },
+    {
+      "id": 2,
+      "imageURL": "https://static.zara.net/photos///2023/I/0/1/p/0706/429/708/12/w/478/0706429708_2_5_1.jpg?ts=1692960628287",
+      "title": "COMFORT OVERSHIRT WITH POCKETS",
+      "description": "Collared overshirt made of a stretchy fabric. Long sleeves with snap-button cuffs. Chest patch pockets. Front snap-button fastening.",
+      "price": 3.99,
+      "discount": null,
+      "gender": "man",
+      "size": ["M", "L"],
+      "quantity": 3
+    },
+    {
+      "id": 3,
+      "imageURL": "https://static.zara.net/photos///2023/I/0/2/p/7200/408/711/2/w/760/7200408711_1_1_1.jpg?ts=1691417483998",
+      "title": "EMBROIDERED SHIRT",
+      "description": "Relaxed-fit shirt made of cotton. Camp collar and short sleeves. Contrast embroidery on the front. Button-up front.",
+      "price": 3.92,
+      "discount": 20,
+      "gender": "man",
+      "size": ["S", "M"],
+      "quantity": 3
+    },
+    {
+      "id": 4,
+      "imageURL": "https://static.zara.net/photos///2023/I/0/1/p/4644/410/400/2/w/538/4644410400_2_5_1.jpg?ts=1689173154897",
+      "title": "HIROSHI NAGAI PRINT SHIRT",
+      "description": "Relaxed fit shirt made of a satiny fabric. Camp collar and short sleeves. © Hiroshi Nagai graphic prints all over the garment. Side vents at the hem. Button-up front.",
+      "price": 3.99,
+      "discount": 20,
+      "gender": "man",
+      "size": ["L"],
+      "quantity": 3
+    },
+    {
+      "id": 5,
+      "imageURL": "https://static.zara.net/photos///2023/I/0/2/p/6524/108/700/2/w/538/6524108700_2_1_1.jpg?ts=1699457612070",
+      "title": "CHECK FLANNEL SHIRT",
+      "description": "Regular fit collared shirt made of cotton with a flannel finish. Long sleeves with buttoned cuffs. Chest patch pocket. Split hem. Button-up front.",
+      "price": 3.99,
+      "discount": 20,
+      "gender": "man",
+      "size": ["S", "M", "L"],
+      "quantity": 3
+    },
+    {
+      "id": 6,
+      "imageURL": "https://static.zara.net/photos///2023/I/0/2/p/6987/350/427/2/w/478/6987350427_2_4_1.jpg?ts=1691136026750",
+      "title": "DENIM SHIRT",
+      "description": "Regular fit collared shirt made of denim fabric. Long sleeves with buttoned cuffs. Chest patch pockets with flaps. Faded effect. Front snap-button fastening.",
+      "price": 2.99,
+      "discount": 20,
+      "gender": "man",
+      "size": ["S", "M", "L", "XL"],
+      "quantity": 3
+    },
+    {
+      "id": 7,
+      "imageURL": "https://static.zara.net/photos///2023/I/0/2/p/9621/314/800/2/w/970/9621314800_1_1_1.jpg?ts=1697008718924",
+      "title": "CREASED-EFFECT JACQUARD OVERSHIRT",
+      "description": "Relaxed fit spread collar overshirt made of a creased-effect fabric. Long sleeves with buttoned cuffs. Button-up front.",
+      "price": 4.99,
+      "discount": 20,
+      "gender": "man",
+      "size": ["S", "M", "L", "XL", "XXL"],
+      "quantity": 3
+    },
+    {
+      "id": 8,
+      "imageURL": "https://static.zara.net/photos///2023/I/0/2/p/3411/303/802/2/w/760/3411303802_1_1_1.jpg?ts=1698398654794",
+      "title": "RIPSTOP PUFFER JACKET",
+      "description1": "Puffer jacket made of technical ripstop textured fabric that is resistant to tearing.",
+      "description2": "High neck and long sleeves with elasticated cuffs. Zip pockets at the hip and an inside pocket detail. Adjustable hem with elasticated sides. Zip-up front.",
+      "price": 39.99,
+      "discount": 20,
+      "gender": "man",
+      "size": ["L", "XL"],
+      "quantity": 3
+    },
+    {
+      "id": 9,
+      "imageURL": "https://static.zara.net/photos///2023/I/0/2/p/2675/350/120/2/w/760/2675350120_1_1_1.jpg?ts=1688481990984",
+      "title": "TEXTURED CROCHET SHIRT",
+      "description": "Relaxed fit shirt made of open textured fabric. Camp collar and short sleeves. Button-up front.",
+      "price": 3.99,
+      "discount": 20,
+      "gender": "man",
+      "size": ["S", "M", "XL"],
+      "quantity": 3
+    },
+    {
+      "id": 10,
+      "imageURL": "https://static.zara.net/photos///2023/I/0/1/p/2043/845/424/2/w/760/2043845424_1_1_1.jpg?ts=1699274859944",
+      "title": "SATIN MIDI SKIRT",
+      "description": "High-waist skirt with an elastic waistband.",
+      "price": 2.99,
+      "discount": 20,
+      "gender": "woman",
+      "size": ["M"],
+      "quantity": 3
+    },
+    {
+      "id": 11,
+      "imageURL": "https://static.zara.net/photos///2023/I/0/1/p/6318/261/802/17/w/1140/6318261802_1_1_1.jpg?ts=1699349537274",
+      "title": "CAMISOLE DRESS WITH RHINESTONE STRAPS",
+      "description": "Satin dress featuring a cowl neckline, thin straps with rhinestone bead appliqués and gathered detail at the sides of the waist",
+      "price": 3.99,
+      "discount": 20,
+      "gender": "woman",
+      "size": ["S", "M", "XXL"],
+      "quantity": 3
+    },
+    {
+      "id": 12,
+      "imageURL": "https://static.zara.net/photos///2023/I/0/1/p/8741/256/800/21/w/1140/8741256800_1_1_1.jpg?ts=1699349516882",
+      "title": "SATIN SHIRT",
+      "description": "Collared shirt with a V-neckline. Long cuffed sleeves. Front button fastening.",
+      "price": 1.99,
+      "discount": null,
+      "gender": "woman",
+      "size": ["S", "M", "L", "XL", "XXL"],
+      "quantity": 3
+    },
+    {
+      "id": 13,
+      "imageURL": "https://static.zara.net/photos///2023/I/0/1/p/3046/257/800/2/w/1036/3046257800_1_1_1.jpg?ts=1699461185434",
+      "title": "LEATHER EFFECT COAT",
+      "description": "Coat with a lapel collar and long sleeves with shoulder pads. Front welt pockets. Back vent at the hem. Double-breasted front button fastening.",
+      "price": 7.59,
+      "discount": 10,
+      "gender": "woman",
+      "size": ["M", "L", "XXL"],
+      "quantity": 3
+    },
+    {
+      "id": 14,
+      "imageURL": "https://static.zara.net/photos///2024/V/0/1/p/3666/051/712/2/w/760/3666051712_1_1_1.jpg?ts=1699264158432",
+      "title": "SATIN SHIRT WITH BOW",
+      "description": "Collared shirt featuring a contrast tie and long sleeves. Button-up front fastening.",
+      "price": 2.89,
+      "discount": 20,
+      "gender": "woman",
+      "size": ["S"],
+      "quantity": 3
+    },
+    {
+      "id": 15,
+      "imageURL": "https://static.zara.net/photos///2023/I/0/1/p/3046/271/800/2/w/760/3046271800_1_1_1.jpg?ts=1695217992670",
+      "title": "SOFT OVERSIZE COAT",
+      "description": "Coat with a lapel collar and long sleeves. Front pockets. Double-breasted button fastening on the front.",
+      "price": 2.59,
+      "discount": 10,
+      "gender": "woman",
+      "size": ["M", "L"],
+      "quantity": 3
+    },
+    {
+      "id": 16,
+      "imageURL": "https://static.zara.net/photos///2023/I/0/3/p/1716/769/703/303/w/760/1716769703_1_1_1.jpg?ts=1696326889054",
+      "title": "LOS ANGELES LAKERS NBA ©",
+      "description": "Round neck T-shirt with short sleeves. Featuring an embroidered LOS ANGELES LAKERS NBA © motif on the chest, a print on the back and a label appliqué on the hem.",
+      "price": 890,
+      "discount": null,
+      "gender": "man",
+      "size": ["S", "M"],
+      "quantity": 3
+    },
+    {
+      "id": 17,
+      "imageURL": "https://static.zara.net/photos///2023/V/0/3/p/1887/698/250/302/w/760/1887698250_1_1_1.jpg?ts=1678788769636",
+      "title": "BASIC POLO SHIRT",
+      "description": "Collared polo shirt with short sleeves and a buttoned yoke.",
+      "price": 790,
+      "discount": null,
+      "gender": "man",
+      "size": ["S", "M"],
+      "quantity": 3
+    },
+    {
+      "id": 18,
+      "imageURL": "https://static.zara.net/photos///2023/I/0/3/p/4012/576/926/202/w/1044/4012576926_1_1_1.jpg?ts=1698930435533",
+      "title": "HEAVY WASH SLOGAN SWEATSHIRT",
+      "description": "Sweatshirt with a round neck and long sleeves with ribbed trims. Featuring a front slogan print.",
+      "price": 1.39,
+      "discount": 10,
+      "gender": "girl",
+      "size": ["S", "M"],
+      "quantity": 3
+    },
+    {
+      "id": 19,
+      "imageURL": "https://static.zara.net/photos///2023/I/0/3/p/2878/709/812/103/w/1044/2878709812_1_1_1.jpg?ts=1697451162136",
+      "title": "SOFT-TOUCH T-SHIRT",
+      "description": "Round neck T-shirt with long sleeves. Button fastening on the shoulder. Special soft fabric.",
+      "price": 990,
+      "discount": 10,
+      "gender": "girl",
+      "size": ["S", "M"],
+      "quantity": 3
+    },
+    {
+      "id": 20,
+      "imageURL": "https://static.zara.net/photos///2023/I/0/3/p/4012/576/514/202/w/696/4012576514_1_1_1.jpg?ts=1698930434984",
+      "title": "HEAVY WASH SLOGAN SWEATSHIRT",
+      "description": "Sweatshirt with a round neck and long sleeves with ribbed trims. Featuring a front slogan print.",
+      "price": 990,
+      "discount": null,
+      "gender": "girl",
+      "size": ["S", "M"],
+      "quantity": 3
+    }
+  ]
+  

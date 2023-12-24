@@ -1,0 +1,22 @@
+.headerContainer {
+    height: 10vh;
+    padding: 0 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .pageContainer {
+    display: flex;
+    gap: 100px;
+  }
+  
+  .pageContainer p {
+    cursor: pointer;
+  }
+  
+  .iconContainer {
+    display: flex;
+    gap: 30px;
+  }
+  

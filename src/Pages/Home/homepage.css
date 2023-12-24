@@ -1,0 +1,33 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 400px;
+    height: 500px;
+    background-color: yellow;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 10px;
+
+}
+button{
+    width: 45%;
+    height: 50px;
+    background-color: #66FF99;
+    border: 0.3px solid black;
+} */
