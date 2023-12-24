@@ -9,11 +9,13 @@ function App() {
   return (
     <BrowserRouter>
       <CartContextProvider>
-        <Header />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/cart" element={<Cart />} />
-        </Routes>
+        <div style={{ padding: "0 7%" }}>
+          <Header />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/cart" element={<Cart />} />
+          </Routes>
+        </div>
       </CartContextProvider>
     </BrowserRouter>
   );
