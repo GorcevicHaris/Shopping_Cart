@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import "./cart.css";
 import { ContextCart } from "../../Store/CartContext";
 import Card from "../../../ShoppingProdCard/Card";
@@ -21,11 +21,32 @@ const style = {
 };
 
 function Cart() {
-  const { shoppingCart, setShoppingCart, removeCart, totalPrice } =
+  const { shoppingCart, setShoppingCart, removeCart, totalPrice, inCart } =
     useContext(ContextCart);
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  // function setStorage() {
+  //   const storageSet = localStorage.setItem(
+  //     shoppingCart.map((el) => el.id),
+  //     JSON.stringify(shoppingCart)
+  //   );
+  //   return storageSet;
+  // }
+  // useEffect(() => {
+  //   getStorage();
+  // }, []);
+
+  useEffect(() => {
+    localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart));
+  }, [shoppingCart]);
+
+  useEffect(() => {
+    const savedCart = JSON.parse(localStorage.getItem("shoppingCart"));
+    if (savedCart) {
+      setShoppingCart(savedCart);
+    }
+  }, []);
   return (
     <div className="cartContainer">
       {shoppingCart.map((product) => (

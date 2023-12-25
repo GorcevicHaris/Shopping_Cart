@@ -4,8 +4,9 @@ import { ContextCart } from "../Store/CartContext";
 
 function Card({ product, addToCarta }) {
   // console.log(addToCart, "addtocrd");
-  const { shoppingCart, inCart } = useContext(ContextCart);
-  console.log(product);
+  const { shoppingCart, inCart, addToCart } = useContext(ContextCart);
+  console.log(product, "product");
+  console.log(shoppingCart, "shoppingcard");
   console.log(addToCarta, "addtocarta");
 
   const inStorage = () => {
@@ -16,7 +17,7 @@ function Card({ product, addToCarta }) {
   return (
     <div className="container">
       <div className="image">
-        <img src={product.imageURL} alt="" />
+        <img src={product.imageURL} />
       </div>
       <div className="card-content">
         <div className="wrapper">

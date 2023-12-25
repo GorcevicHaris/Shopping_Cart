@@ -1,9 +1,11 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 
 const ContextCart = createContext();
 function CartContextProvider({ children }) {
-  const [shoppingCart, setShoppingCart] = useState([]);
   const [random, setRandom] = useState([]);
+  const [shoppingCart, setShoppingCart] = useState(
+    JSON.parse(localStorage.getItem("shoppingCart")) || []
+  );
 
   function notify() {
     alert("already added");
@@ -25,6 +27,10 @@ function CartContextProvider({ children }) {
       alert("succesfull");
     }
   }
+  useEffect(() => {
+    localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart));
+  }, [shoppingCart]);
+
   function totalPrice() {
     let total = 0;
     shoppingCart.map((data) => {
