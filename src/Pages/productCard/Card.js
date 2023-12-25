@@ -10,9 +10,7 @@ function Card({ product, addToCarta }) {
 
   const inStorage = () => {
     const storageProduct = localStorage.getItem(product.title);
-
-    if (storageProduct) return true;
-    else return false;
+    return storageProduct;
   };
 
   return (

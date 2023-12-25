@@ -7,14 +7,10 @@ function Header() {
   const navigate = useNavigate();
   const { counterSize, shoppingCart } = useContext(ContextCart);
   console.log(counterSize());
-
-  function inStorage() {
-    const inStrg = localStorage.getItem(
-      shoppingCart.length,
-      shoppingCart.length
-    );
-    return inStrg;
-  }
+  const inStorage = () => {
+    const storageProduct = localStorage.getItem(shoppingCart.length);
+    return storageProduct;
+  };
   return (
     <div className="headerContainer">
       <div style={{ width: "8%" }}>
@@ -46,7 +42,7 @@ function Header() {
               alignItems: "center",
             }}
           >
-            {counterSize() || inStorage()}
+            {counterSize()}
           </div>
         </div>
         <p onClick={() => navigate("/profile")} style={{ cursor: "pointer" }}>

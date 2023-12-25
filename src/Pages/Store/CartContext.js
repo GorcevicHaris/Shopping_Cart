@@ -36,11 +36,8 @@ function CartContextProvider({ children }) {
     });
     return total;
   }
-  const counterSize = () => {
-    return (
-      shoppingCart.length,
-      localStorage.setItem(shoppingCart.length, shoppingCart.length)
-    );
+  const counterSize = (product) => {
+    return shoppingCart.length;
   };
 
   return (
