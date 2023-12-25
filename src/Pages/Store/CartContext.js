@@ -19,6 +19,9 @@ function CartContextProvider({ children }) {
       notify();
     } else {
       setShoppingCart((prev) => [...prev, product]);
+      localStorage.setItem(product.title, JSON.stringify(product));
+      // prva vrednost je po cemu ce local storage da zna koji je koji objekat po id-ju gleda a ovo product je samo da prikaze
+      //tu vrednost ako zelis ako ne moze bilo sta da se napise radice
       alert("succesfull");
     }
   }
@@ -34,7 +37,10 @@ function CartContextProvider({ children }) {
     return total;
   }
   const counterSize = () => {
-    return shoppingCart.length;
+    return (
+      shoppingCart.length,
+      localStorage.setItem(shoppingCart.length, shoppingCart.length)
+    );
   };
 
   return (
