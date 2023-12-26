@@ -3,8 +3,11 @@ import React, { createContext, useEffect, useState } from "react";
 const ContextCart = createContext();
 function CartContextProvider({ children }) {
   const [random, setRandom] = useState([]);
-  const [shoppingCart, setShoppingCart] = useState([]);
-
+  const [shoppingCart, setShoppingCart] = useState(
+    JSON.parse(localStorage.getItem("shoppingCart")) || []
+  );
+  localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart));
+  //TEXT tjst key u local storage moraju biti identični
   function notify() {
     alert("already added");
   }
