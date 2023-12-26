@@ -6,6 +6,7 @@ function CartContextProvider({ children }) {
   const [shoppingCart, setShoppingCart] = useState(
     JSON.parse(localStorage.getItem("shoppingCart")) || []
   );
+  localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart));
 
   function notify() {
     alert("already added");
@@ -27,9 +28,6 @@ function CartContextProvider({ children }) {
       alert("succesfull");
     }
   }
-  useEffect(() => {
-    localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart));
-  }, [shoppingCart]);
 
   function totalPrice() {
     let total = 0;

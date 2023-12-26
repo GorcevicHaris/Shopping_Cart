@@ -10,7 +10,7 @@ function Card({ product, addToCarta }) {
   console.log(addToCarta, "addtocarta");
 
   const inStorage = () => {
-    const storageProduct = localStorage.getItem(product.title);
+    const storageProduct = JSON.parse(localStorage.getItem(product.title));
     return storageProduct;
   };
 
