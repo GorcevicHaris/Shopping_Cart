@@ -24,6 +24,7 @@ function Header() {
         <p onClick={() => navigate("/")}>All products</p>
         <p onClick={() => navigate("/about")}>About</p>
         <p onClick={() => navigate("/contact")}>Contact us</p>
+        <p onClick={() => navigate("/login")}>Login</p>
       </div>
       <div className="iconContainer">
         <div style={{ position: "relative", cursor: "pointer" }}>

@@ -4,19 +4,20 @@ import "./homepage.css";
 import Card from "../productCard/Card";
 import { ContextCart } from "../Store/CartContext";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 function HomePage() {
   const { addToCart } = useContext(ContextCart);
   const [data, setData] = useState([]);
 
-  const getData = async () => {
-    const response = await axios.get("http://localhost:4000/getData");
-    setData(response.data);
-    console.log(response.data, "response");
-  };
+  // const getData = async () => {
+  //   const response = await axios.get("http://localhost:4000/getData");
+  //   setData(response.data);
+  //   console.log(response.data, "response");
+  // };
 
-  useEffect(() => {
-    getData();
-  }, []);
+  // useEffect(() => {
+  //   getData();
+  // }, []);
   return (
     <div
       style={{
@@ -26,7 +27,7 @@ function HomePage() {
         gap: 40,
       }}
     >
-      {data}
+      {/* {data} */}
       {products &&
         products.map((product) => (
           <Card
