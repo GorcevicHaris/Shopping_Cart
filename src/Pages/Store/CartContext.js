@@ -3,10 +3,7 @@ import React, { createContext, useEffect, useState } from "react";
 const ContextCart = createContext();
 function CartContextProvider({ children }) {
   const [random, setRandom] = useState([]);
-  const [shoppingCart, setShoppingCart] = useState(
-    JSON.parse(localStorage.getItem("shoppingCart")) || []
-  );
-  localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart));
+  const [shoppingCart, setShoppingCart] = useState([]);
 
   function notify() {
     alert("already added");

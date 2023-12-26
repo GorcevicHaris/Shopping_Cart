@@ -9,10 +9,7 @@ function Card({ product, addToCarta }) {
   console.log(shoppingCart, "shoppingcard");
   console.log(addToCarta, "addtocarta");
 
-  const inStorage = () => {
-    const storageProduct = JSON.parse(localStorage.getItem(product.title));
-    return storageProduct;
-  };
+  const storageProduct = JSON.parse(localStorage.getItem(product.title));
 
   return (
     <div className="container">
@@ -25,7 +22,7 @@ function Card({ product, addToCarta }) {
           <p className="price">{product.price}$</p>
           <div className="btns">
             {product.discount && <button disabled>{product.discount}%</button>}
-            {inCart(product) || inStorage() ? (
+            {storageProduct ? (
               <button
                 disabled
                 style={{ backgroundColor: "gray", border: "none" }}
