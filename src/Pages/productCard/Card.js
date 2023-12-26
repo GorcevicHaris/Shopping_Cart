@@ -5,11 +5,11 @@ import { ContextCart } from "../Store/CartContext";
 function Card({ product, addToCarta }) {
   // console.log(addToCart, "addtocrd");
   const { shoppingCart, inCart, addToCart } = useContext(ContextCart);
-  console.log(product, "product");
-  console.log(shoppingCart, "shoppingcard");
-  console.log(addToCarta, "addtocarta");
+  // console.log(product, "product");
+  // console.log(shoppingCart, "shoppingcard");
+  // console.log(addToCarta, "addtocarta");
 
-  const storageProduct = JSON.parse(localStorage.getItem(product.title));
+  const storageProduct = JSON.parse(localStorage.getItem(product.id));
 
   return (
     <div className="container">
@@ -22,7 +22,7 @@ function Card({ product, addToCarta }) {
           <p className="price">{product.price}$</p>
           <div className="btns">
             {product.discount && <button disabled>{product.discount}%</button>}
-            {storageProduct ? (
+            {inCart(product) || storageProduct ? (
               <button
                 disabled
                 style={{ backgroundColor: "gray", border: "none" }}

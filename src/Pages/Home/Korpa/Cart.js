@@ -37,16 +37,6 @@ function Cart() {
   //   getStorage();
   // }, []);
 
-  useEffect(() => {
-    localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart));
-  }, [shoppingCart]);
-
-  useEffect(() => {
-    const savedCart = JSON.parse(localStorage.getItem("shoppingCart"));
-    if (savedCart) {
-      setShoppingCart(savedCart);
-    }
-  }, []);
   return (
     <div className="cartContainer">
       {shoppingCart.map((product) => (
