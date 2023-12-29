@@ -36,7 +36,7 @@ function Cart() {
   // useEffect(() => {
   //   getStorage();
   // }, []);
-
+  //
   return (
     <div className="cartContainer">
       {shoppingCart.map((product) => (
