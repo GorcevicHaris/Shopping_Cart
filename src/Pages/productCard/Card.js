@@ -4,7 +4,7 @@ import { ContextCart } from "../Store/CartContext";
 
 function Card({ product, addToCarta }) {
   // console.log(addToCart, "addtocrd");
-  const { shoppingCart, inCart, addToCart } = useContext(ContextCart);
+  const { inCart } = useContext(ContextCart);
   // console.log(product, "product");
   // console.log(shoppingCart, "shoppingcard");
   // console.log(addToCarta, "addtocarta");

@@ -28,7 +28,7 @@ function CartContextProvider({ children }) {
       alert("succesfull");
     }
   }
-
+  //
   function totalPrice() {
     let total = 0;
     shoppingCart.map((data) => {
@@ -40,7 +40,7 @@ function CartContextProvider({ children }) {
     });
     return total;
   }
-  const counterSize = (product) => {
+  const counterSize = () => {
     return shoppingCart.length;
   };
 
