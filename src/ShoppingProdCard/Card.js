@@ -10,6 +10,7 @@ function Card({ product, removeFromCart }) {
     if (quantity < 10) {
       setQuantity(quantity + 1);
       const productId = product.id;
+      console.log(product.id, "proid");
 
       const existingProductIndex = secondQuantity.findIndex((el) => {
         console.log("el:", Object.keys(el), productId);
