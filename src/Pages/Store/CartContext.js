@@ -3,6 +3,7 @@ import React, { createContext, useEffect, useState } from "react";
 const ContextCart = createContext();
 function CartContextProvider({ children }) {
   const [random, setRandom] = useState([]);
+  const [secondQuantity, setSecondQuantity] = useState([]);
   const [shoppingCart, setShoppingCart] = useState(
     JSON.parse(localStorage.getItem("shoppingCart")) || []
   );
@@ -56,6 +57,8 @@ function CartContextProvider({ children }) {
         removeCart,
         totalPrice,
         counterSize,
+        secondQuantity,
+        setSecondQuantity,
       }}
     >
       {children}

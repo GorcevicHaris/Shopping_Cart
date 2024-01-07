@@ -62,7 +62,7 @@ function Cart() {
               X
             </div>
             <Typography id="modal-modal-title" variant="h6" component="h2">
-              Your bill is {totalPrice()}$
+              Your bill is {totalPrice(shoppingCart)}$
               <button
                 style={{
                   width: "50%",
