@@ -8,28 +8,38 @@ function Card({ product, removeFromCart }) {
   function increase() {
     if (quantity < 10) {
       setQuantity(quantity + 1);
-      const productId = product.id;
+      // const productId = product.id;
       console.log(product.id, "proid");
-
+      //secondquantity oznacava kada stisnes na plus pa kad dodaje u niz objekte sa id-jom i quantity [{1:0}]
       const existingProductIndex = secondQuantity.findIndex((el) => {
-        return Object.keys(el).includes(`${productId}`);
+        return Object.keys(el).includes(`${product.id}`);
       });
+      //existingproductondex proverava da li product.id postoji u secondquantity od njegovih keyeva
+      // znaci kada stisnemo primera radi id 1 product.id ce da bude 1 i dodace ga jer nije imao taj key
+      // ako stisnemo ponovo taj isti id nece ga dodati jer vec postoji taj
+      //product.id oznacava shoppincart koji dodat u korpu tjst njegov id tjst koliko smo dodali produkata
 
       console.log(existingProductIndex, "existingProductIndex");
 
       if (existingProductIndex >= 0) {
         // Product exists, update its quantity
+        // Ako postoji proizvod nemoj da ga dodas
         const updatedSecondQuantity = secondQuantity;
-        updatedSecondQuantity[existingProductIndex].productId = quantity;
+        console.log(secondQuantity, "secondqnt");
+        updatedSecondQuantity[existingProductIndex][product.id] = quantity;
+        console.log(
+          updatedSecondQuantity[existingProductIndex][product.id],
+          "updatedSecondQuantity"
+        );
         setSecondQuantity(updatedSecondQuantity);
       } else {
         // Product doesn't exist, add a new entry
-        setSecondQuantity((prev) => [...prev, { [productId]: quantity }]);
+        // Ako ne postoji Proizvod dodaj novi
+        // kada se pojavi -1 existingproductindex znaci da nije postojao pa ga dodaje
+        setSecondQuantity((prev) => [...prev, { [product.id]: quantity }]);
       }
     }
-    console.log(secondQuantity);
   }
-  /////
   function decrease() {
     if (quantity > 0) {
       setQuantity(quantity - 1);

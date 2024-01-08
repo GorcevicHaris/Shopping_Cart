@@ -17,6 +17,7 @@ function CartContextProvider({ children }) {
   }
   function removeCart(product) {
     setShoppingCart(shoppingCart.filter((data) => data.id !== product.id));
+    setSecondQuantity([]);
   }
   function addToCart(product) {
     if (inCart(product)) {
@@ -33,9 +34,11 @@ function CartContextProvider({ children }) {
   function totalPrice() {
     let total = 0;
     shoppingCart.map((data) => {
-      const productQuantity = secondQuantity.find((el) =>
-        Object.keys(el).includes(`${data.id}`)
-      ); //mora biti string jer object.keys uvek vraca string
+      const productQuantity = secondQuantity.find((el) => {
+        console.log(el, "el");
+        console.log(data.id, "data.id");
+        return Object.keys(el).includes(`${data.id}`);
+      }); //mora biti string jer object.keys uvek vraca string
       const quantity = productQuantity ? productQuantity[data.id] : 0;
 
       if (data.discount) {
