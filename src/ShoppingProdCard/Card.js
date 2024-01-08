@@ -25,21 +25,25 @@ function Card({ product, removeFromCart }) {
         // Product exists, update its quantity
         // Ako postoji proizvod nemoj da ga dodas
         const updatedSecondQuantity = secondQuantity;
-        console.log(secondQuantity, "secondqnt");
+        // console.log(secondQuantity, "secondqnt");
         updatedSecondQuantity[existingProductIndex][product.id] = quantity;
-        console.log(
-          updatedSecondQuantity[existingProductIndex][product.id],
-          "updatedSecondQuantity"
-        );
+        //updatedSecondQuantity[existingProductIndex] kljuc i value,kada stavimo [product.id] dobijamo value
+        // console.log(
+        //   updatedSecondQuantity[existingProductIndex],
+        //   "updatedSecondQuantity"
+        // );
+        // console.log(updatedSecondQuantity, "seconquantityupdated");
         setSecondQuantity(updatedSecondQuantity);
       } else {
         // Product doesn't exist, add a new entry
         // Ako ne postoji Proizvod dodaj novi
         // kada se pojavi -1 existingproductindex znaci da nije postojao pa ga dodaje
         setSecondQuantity((prev) => [...prev, { [product.id]: quantity }]);
+        //gore linija vraca staru vrednost tjst niz i u njega objekte ne dodaje samo nove vec i stare cuva
       }
     }
   }
+  console.log(quantity, "quantity");
   function decrease() {
     if (quantity > 0) {
       setQuantity(quantity - 1);

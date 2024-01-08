@@ -35,8 +35,8 @@ function CartContextProvider({ children }) {
     let total = 0;
     shoppingCart.map((data) => {
       const productQuantity = secondQuantity.find((el) => {
-        console.log(el, "el");
-        console.log(data.id, "data.id");
+        // console.log(el, "el");
+        // console.log(data.id, "data.id");
         return Object.keys(el).includes(`${data.id}`);
       }); //mora biti string jer object.keys uvek vraca string
       const quantity = productQuantity ? productQuantity[data.id] : 0;
