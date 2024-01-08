@@ -3,7 +3,6 @@ import "./card.css";
 import { ContextCart } from "../Pages/Store/CartContext";
 function Card({ product, removeFromCart }) {
   const [quantity, setQuantity] = useState(0);
-  const [productNew, setProductNew] = useState([]);
   const { secondQuantity, setSecondQuantity } = useContext(ContextCart);
 
   function increase() {
@@ -13,16 +12,15 @@ function Card({ product, removeFromCart }) {
       console.log(product.id, "proid");
 
       const existingProductIndex = secondQuantity.findIndex((el) => {
-        console.log("el:", Object.keys(el), productId);
         return Object.keys(el).includes(`${productId}`);
       });
 
-      console.log(existingProductIndex);
+      console.log(existingProductIndex, "existingProductIndex");
 
-      if (existingProductIndex > -1) {
+      if (existingProductIndex >= 0) {
         // Product exists, update its quantity
-        const updatedSecondQuantity = [...secondQuantity];
-        updatedSecondQuantity[existingProductIndex][productId] = quantity;
+        const updatedSecondQuantity = secondQuantity;
+        updatedSecondQuantity[existingProductIndex].productId = quantity;
         setSecondQuantity(updatedSecondQuantity);
       } else {
         // Product doesn't exist, add a new entry
@@ -31,7 +29,7 @@ function Card({ product, removeFromCart }) {
     }
     console.log(secondQuantity);
   }
-
+  //
   function decrease() {
     if (quantity > 0) {
       setQuantity(quantity - 1);

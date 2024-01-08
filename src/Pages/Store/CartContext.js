@@ -31,19 +31,20 @@ function CartContextProvider({ children }) {
   }
   //
   function totalPrice() {
-    return shoppingCart.reduce((total, product) => {
-      const productQuantity = secondQuantity.find(
-        (el) => Object.keys(el).includes(product.id.toString())
-        //Ovde pretvaramo product.id jer Object.keys uvek vraca string
-      );
-      const quantity = productQuantity ? productQuantity[product.id] : 0;
+    let total = 0;
+    shoppingCart.map((data) => {
+      const productQuantity = secondQuantity.find((el) =>
+        Object.keys(el).includes(`${data.id}`)
+      ); //mora biti string jer object.keys uvek vraca string
+      const quantity = productQuantity ? productQuantity[data.id] : 0;
 
-      const price = product.discount
-        ? product.price - product.price * (product.discount / 100)
-        : product.price;
-
-      return total + price * quantity;
-    }, 0);
+      if (data.discount) {
+        total += (data.price - data.price * (data.discount / 100)) * quantity;
+      } else {
+        total += data.price * quantity;
+      }
+    });
+    return total;
   }
 
   const counterSize = () => {
