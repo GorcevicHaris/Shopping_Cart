@@ -29,7 +29,7 @@ function Card({ product, removeFromCart }) {
     }
     console.log(secondQuantity);
   }
-  //
+  /////
   function decrease() {
     if (quantity > 0) {
       setQuantity(quantity - 1);
