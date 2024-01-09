@@ -40,6 +40,7 @@ function CartContextProvider({ children }) {
         return Object.keys(el).includes(`${data.id}`);
       }); //mora biti string jer object.keys uvek vraca string
       const quantity = productQuantity ? productQuantity[data.id] : 0;
+      console.log(quantity, "qqqqqqqqq", data.id);
 
       if (data.discount) {
         total += (data.price - data.price * (data.discount / 100)) * quantity;
