@@ -8,13 +8,13 @@ function Card({ product, removeFromCart }) {
   function increase() {
     if (quantity < 10) {
       setQuantity(quantity + 1);
-      const existingProductIndex = secondQuantity.findIndex((el) =>
-        Object.keys(el).includes(`${product.id}`)
+      const existingProductIndex = secondQuantity.findIndex((key) =>
+        Object.keys(key).includes(`${product.id}`)
       );
       if (existingProductIndex >= 0) {
-        const updatedSecondQuantity = secondQuantity;
-        updatedSecondQuantity[existingProductIndex][product.id] = quantity;
-        setSecondQuantity(updatedSecondQuantity);
+        const copyOfSecondQuantity = secondQuantity;
+        copyOfSecondQuantity[existingProductIndex][product.id] = quantity;
+        setSecondQuantity(copyOfSecondQuantity);
       } else {
         setSecondQuantity((prev) => [...prev, { [product.id]: quantity }]);
       }
