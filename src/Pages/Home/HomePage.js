@@ -11,10 +11,10 @@ function HomePage() {
 
   // const getData = async () => {
   //   const response = await axios.get("http://localhost:4000/getData");
-  //   setData(response.data);
+  //   setData(response.data.message);
   //   console.log(response.data, "response");
   // };
-
+  // console.log(data, "data");
   // useEffect(() => {
   //   getData();
   // }, []);
